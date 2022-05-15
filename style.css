@@ -1,0 +1,193 @@
+:root {
+    --Strong_cyan: hsl(172, 67%, 45%);
+    --Very_dark_cyan: hsl(183, 100%, 15%);
+    --Dark_grayis_cyan: hsl(186, 14%, 43%);
+    --Grayish_cyan: hsl(184, 14%, 56%);
+    --Light_grayish_cyan: hsl(185, 41%, 84%);
+    --Very_light_grayish_cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     font-family: 'Space Mono', monospace;
+}
+.main_container{
+    display: flex;
+    height: 100vh;
+    background:url('/SimpleShiny.svg') no-repeat center ;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    min-height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width:50%;
+    background-color: var(--White);
+    border-radius: 20px;
+}
+.right{
+    background-color: var(--Very_dark_cyan);
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    height: 20rem;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.marg{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    color:white;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.btn{
+    margin-top:5rem;
+}
+#price{
+    margin-left: 1.5rem;
+    color: var(--Strong_cyan);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+#tot_price{
+    margin-left: 1.5rem;
+    color: var(--Strong_cyan);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.btn{
+    margin-top: 2rem;
+}
+.btn button{
+    /* margin-top: 0rem; */
+    height: 2.4rem;
+    width: 17rem;
+    background-color: var(--Strong_cyan);
+    border: white;
+    border-radius: 5px;
+    font-size: 1.05rem;
+    color: var(--Very_dark_cyan);
+    cursor: pointer;
+}
+
+
+.left
+{
+    height: 80%;
+    min-width: 50%;
+    margin-left: 3rem;
+    margin-top: 3rem;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.bill_input{
+    color:var(--Dark_grayis_cyan);
+}
+
+#bill{
+    width: 20rem;
+    height: 2rem;
+    background-color: var(--Very_light_grayish_cyan);
+    font-family: 'Space Mono', monospace;
+    color: var(--Very_dark_cyan);
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: 700;
+
+}
+#bill:focus{
+    color: var(--Very_dark_cyan);
+}
+.tip{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 1rem;
+}
+.tip_per{
+    width: 100px;
+    height: 2.5rem;
+    background-color:var(--Very_dark_cyan);
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.tip_per:hover, .tip_per:focus,.tip_per:active{
+    background-color: var(--Strong_cyan);
+    color: var(--Very_dark_cyan);
+}
+p,label{
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color:var(--Grayish_cyan);
+}
+#custom{background-color: #fff; color:var(--Grayish_cyan); border: none;}
+input:hover, input:focus{
+    outline: none;
+}
+.no_of_people{
+    margin-top: 2rem;
+}
+#people{
+    width: 20rem;
+    height: 2rem;
+    background-color: var(--Very_light_grayish_cyan);
+    font-family: 'Space Mono', monospace;
+    color: var(--Very_dark_cyan);
+    font-size: 1.5rem;
+    text-align: right;
+    /* font-weight: 700; */
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .container{
+        flex-direction: column;
+    }
+    .right{
+        width: 80%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+    .btn{
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+    .btn button{
+        width: 17rem;
+    }
+    #res{
+        margin-bottom: 1rem;
+    }
+    .left{
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+    /* #bill,#people{
+    width: 15rem;
+    } */
+    .tip{
+        margin-right: 2rem;
+    }
+
+  }
