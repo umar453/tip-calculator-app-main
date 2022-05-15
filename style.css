@@ -41,7 +41,7 @@ body{
     align-items: flex-start;
     flex-direction: column;
     width: 50%;
-    height: 20rem;
+    height: 21.25rem;
     margin-right: 20px;
     border-radius: 10px;
 }
@@ -74,7 +74,7 @@ body{
 .btn button{
     /* margin-top: 0rem; */
     height: 2.4rem;
-    width: 17rem;
+    width: 16rem;
     background-color: var(--Strong_cyan);
     border: white;
     border-radius: 5px;
